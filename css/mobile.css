@@ -1,0 +1,450 @@
+@font-face {
+    font-family: menuReg;
+    src: url(../fonts/vollkorn.ttf);
+}
+
+@font-face {
+    font-family: menuIt;
+    src: url(../fonts/vollkornIt.ttf);
+}
+
+@font-face {
+    font-family: butler;
+    src: url(../fonts/butlerMedium.otf);
+}
+
+@font-face {
+    font-family: jost;
+    src: url(../fonts/jost.otf);
+}
+
+body{
+    /* Gradient created through Coolors */
+    background: hsla(17, 100%, 93%, 1);
+    background: radial-gradient(circle, hsla(17, 100%, 93%, 1) 0%, hsla(0, 14%, 95%, 1) 87%);
+    background: -moz-radial-gradient(circle, hsla(17, 100%, 93%, 1) 0%, hsla(0, 14%, 95%, 1) 87%);
+    background: -webkit-radial-gradient(circle, hsla(17, 100%, 93%, 1) 0%, hsla(0, 14%, 95%, 1) 87%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFE5DB", endColorstr="#F3EFEF", GradientType=1 );
+}
+
+#nav_container{
+    width: 95vw; 
+    height: 8vh; /* changed */
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 15px;
+} 
+
+nav{
+    width: 95vw; 
+    height: 8vh; /* changed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+}
+
+#nav_logo{
+    width: auto;
+    height: 6vh; /* changed */
+    align-items: center;
+    justify-items: center;
+}    
+
+#nav_items{
+    width: 70vw; /* changed */
+    height: 6vh; /* changed */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+#nav_items a{
+    font-family: menuIt;
+    font-size: 15pt; /* changed */
+    color: #53602F;
+}
+
+a:link{
+    color: black;
+    text-decoration: none ;
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: black ;
+}
+
+a:active{
+    color: black ;
+    font-size: 25pt;
+}
+
+#intro_container{
+    width: 95vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #486F84;
+    font-family: jost;
+    font-size: 15pt; 
+}
+
+#intro_title{
+    color: #486F84;
+    font-family: butler;
+    text-align: center; /*changed*/
+    font-size: 32pt; /*changed*/
+}
+
+#intro_text{
+    display: flex;
+    justify-content: center;
+    width:75vw;
+    text-align: center;
+    color: #53602F;
+    font-size: 13pt; /*changed*/
+}
+
+#projects_container{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center; 
+}
+
+#projects{
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+
+#projects_item1, #projects_item2, #projects_item3, #projects_item4{
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 #D3D0CB;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw; /* changed */
+    height: 15vh; /* changed */
+}
+
+#projects_item1 h1, #projects_item2 h1, #projects_item3 h1, #projects_item4 h1{
+    color: #53602F;
+    font-family: butler;
+    font-size: 15pt; /* changed */
+}
+
+h2{
+    color: #53602F;
+    font-family: butler;
+    font-size: 16pt;  /* changed */
+    margin-left: 5vw; /* added */
+    margin-bottom: 0px; /* added */
+}
+
+/* only for mobile START */
+table{
+    display: none;
+}
+
+#uxprojects_container{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+    height: 100vh;
+    margin-left: 0px;
+}
+
+#uxprojects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    height: 100vh;
+    margin-left: 0px;
+}
+
+#uxprojects_item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 95vw;
+    height: 90vh; 
+    margin-left: 0px;
+}
+
+.uxprojects_frame iframe{
+    width: 80vw;
+    height: 45vh;
+    margin-bottom: 10px;
+}
+
+/* only for mobile END */
+
+.explanation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 0px; /* added */
+    padding: 15px; /* changed */
+    height: 30vh; /* changed */
+    width: 80vw; /* changed */
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 #D3D0CB;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+
+    color: #486F84;
+    font-family: jost;
+    font-size: 13pt; 
+}
+
+.explanation a{
+    font-size: 10pt;
+    color: #486F84;
+    text-decoration: underline;
+}
+
+#teachablemachine, #clock, #generative, #trash, #collages{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* changed for mobile START */
+#canvas_container{
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    height: 70vh;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#canvas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75vw;
+    height: 70vh;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#canvas_birdhouse, #canvas_strawable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75vw;
+    height: 40vh;
+    padding-bottom: 15px;
+}
+
+#canvas_rollable, #canvas_greenroom{
+    display: none;
+}
+/* changed for mobile END */
+
+/* added for mobile START */
+#designs_container{
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    height: 100vh;
+}
+
+#designs{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 100vh;
+}
+
+#designs_item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95vw;
+    height: 100vh;
+}
+
+#veggietop{
+    display: none;
+}
+
+#veggietop1, #veggietop2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* added for mobile END */
+
+
+#canvas_jacquemus, #canvas_discovery, #canvas_bm1, #canvas_bm2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 30vh;
+    /* padding: 20px; */
+    padding-top: 0px;
+}
+
+/* Changed for Mobile START */
+#about_container{
+    width: 85vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+#about_picture{
+    width: 85vw;
+    height: 30vh;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+#intro_picture{
+    height: 50vh;
+}
+
+#about_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    height: 80vh;
+    padding: 0px;
+}
+/* Changed for Mobile END */
+
+#about_text h1{
+    color: #486F84;
+    font-family: butler;
+    font-size: 25pt /* changed */;
+}
+
+#about_text h2{
+    color: #486F84;
+    font-family: jost;
+    font-size: 10pt; 
+}
+
+#about_text p{
+    color: #486F84;
+    font-family: jost;
+    font-size: 13pt; /* changed */
+    word-spacing: 3pt;
+}
+
+.code_explanation p{
+    color: #486F84;
+    font-family: jost;
+    font-size: 13pt;
+}
+
+/* added */
+#generative iframe, #clock iframe{ 
+    width: 80vw;
+    height: 70vh;
+}
+
+/* added */
+#teachablemachine{ 
+    width: 90vw;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+#zellige{
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+#meml{
+    height: auto;
+    width: 300px;
+}
+
+td{
+    padding: 20px;
+}
+
+.myskills{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+    height: 25vh;
+
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 #D3D0CB;
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 15px;
+
+    height: 6vh;
+    margin-top: 0px;
+}
+
+#socialmedia{
+    margin-top: 25px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+    width:50vw;
+    height:10vh;
+    display: none;
+}
+
+#collages_desktop{
+    display: none;
+}
+
